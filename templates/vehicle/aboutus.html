@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+  </style>
+
+  <title></title>
+</head>
+
+<body>
+
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+  <center>
+    <h3 class='alert alert-success' style="margin-bottom:0px;">O nama!</h3>
+  </center>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <h1 class="display-4">Softver za održavanje vozila</h1>
+    <p class="lead">Dobrodošli na stranicu posvećenu softveru za održavanje vozila koji je rezultat predanog rada studenata master studija Fakulteta za saobraćaj i komunikacije u Sarajevu. Ovaj inovativni alat je plod napornog rada i stručnosti naših studenata, koji su ga razvijali kao dio predmeta Napredne metode softverskog inžinjerstva pod mentorstvom poznatog profesora Bakira Karahodže.
+
+      Naš tim studenata je s velikom posvećenošću i entuzijazmom kreirao ovaj softver za održavanje vozila kako bi olakšao svakodnevno upravljanje vozilima, praćenje održavanja i pravovremeno otkrivanje potencijalnih problema. Inspirirani potrebama modernog tržišta i vozača širom svijeta, fokusirali smo se na jednostavnost korištenja, pouzdanost i efikasnost.
+      
+      Naš cilj je pružiti korisnicima intuitivno iskustvo kroz ovaj softver, omogućavajući im da efikasno planiraju održavanje, prate servisne intervale i pravovremeno reaguju na potencijalne probleme, čime se poboljšava sigurnost i produžava životni vijek njihovih vozila.
+      
+      Ovaj projekat nije samo rezultat našeg tehničkog znanja, već i posvećenosti unapređenju iskustva svih vozača. Nastavljamo s razvojem i nadogradnjom ovog alata kako bismo osigurali da bude u skladu s najnovijim tehnološkim trendovima i potrebama korisnika.
+      
+      Hvala vam što ste dio ove priče. Vaša podrška i povratne informacije su od velikog značaja za nas dok nastavljamo unaprijeđivati ovaj softver i pružati vrhunsko iskustvo vozačima širom svijeta.
+      
+      <br>Srdačno,<br>
+      Tim studenata master studija Fakulteta za saobraćaj i komunikacije, Sarajevo</p>
+    <hr class="my-4">
+    <p>Istražite našu web stranicu</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">POČETNA</a>
+    </p>
+  </div>
+  <marquee behavior="scroll" direction="left">
+   <img src="{% static "images/ferrari.png" %}" width="120" height="80" alt="ferrari" />
+    <img src="{% static "images/ford.png" %}" width="120" height="80" alt="ford" />
+   <img src="{% static "images/lambo.png" %}" width="120" height="80" alt="lambo" />
+   <img src="{% static "images/mahindra.png" %}" width="120" height="80" alt="mahindra" />
+   <img src="{% static "images/tvs.png" %}" width="120" height="80" alt="tvs" />
+   <img src="{% static "images/tata.png" %}" width="120" height="80" alt="tata" />
+   <img src="{% static "images/hero.png" %}" width="120" height="80" alt="hero" />
+   <img src="{% static "images/rolls.png" %}" width="120" height="80" alt="rolls" />
+   <img src="{% static "images/suzuki.png" %}" width="120" height="80" alt="suzuki" />
+ </marquee>
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>

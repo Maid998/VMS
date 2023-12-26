@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <style media="screen">
+    .jumbotron {
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+  <div class="jumbotron">
+    <h1 class="display-4">Vaša poruka je uspješno poslana!</h1>
+    <p class="lead">Uskoro ćemo Vam se javiti!</p>
+    <hr class="my-4">
+    <p>Pregledajte ostale značajke web stranice</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">POČETNA</a>
+    </p>
+  </div>
+
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>

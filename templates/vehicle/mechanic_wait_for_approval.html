@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load widget_tweaks %}
+
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+  </style>
+  <body>
+    {% include "vehicle/navbar.html" %}
+
+      <div class="jumbotron" style="margin-top: 0px;
+        margin-bottom: 0px;">
+        <h1 class="display-4">Pozdrav {{request.user.first_name}}</h1>
+        <p class="lead">Vaš korisnički račun još nije odobren <br><br>Naš tim provjerava Vašu prijavu <br><br> Ubrzo ćete dobiti odluku o zapošljenju u našem servisu.</p>
+        <hr class="my-4">
+        <p>Pogledajte poslije</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="/logout" role="button">Odjavi me za sada</a>
+        </p>
+      </div>
+
+{% include "vehicle/footer.html" %}
+  </body>
+</html>
